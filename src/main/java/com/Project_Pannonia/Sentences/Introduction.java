@@ -1,9 +1,21 @@
-package com.Project_Pannonia.Project_Pannonia;
+package com.Project_Pannonia.Sentences;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 public class Introduction implements ListGenerator {
-
+	private int listSize = generateList().size();
+	
+	
+	public String getRandomSentence() {
+		String result;
+		ArrayList<String> introduction = getList();
+		int randomNumber = getNumber();
+		result = introduction.get(randomNumber);
+		
+		return result;
+	}
+	
 	public ArrayList<String> getList() {
 		return generateList();
 	}
@@ -38,5 +50,10 @@ public class Introduction implements ListGenerator {
 		return FirstSection;
 	}
 
-
+	public int getNumber() {
+		Random random = new Random();
+		int element = random.nextInt(listSize-1);
+		
+		return element;
+	}
 }

@@ -1,11 +1,17 @@
-package com.Project_Pannonia.Project_Pannonia;
+package com.Project_Pannonia.Sentences;
 
 import java.util.ArrayList;
 
 public class Reason implements ListGenerator {
-
-	public ArrayList<String> getList() {
+	private int listSize = generateList().size();
+	
+	public String getRandomSentence() {
+		String result ="";
 		
+		return result;
+	}
+	
+	public ArrayList<String> getList() {
 		return generateList();
 	}
 	
