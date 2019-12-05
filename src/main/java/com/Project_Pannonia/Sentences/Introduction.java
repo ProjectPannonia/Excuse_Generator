@@ -32,7 +32,7 @@ public class Introduction implements ListGenerator {
 		FirstSection.add("Találd ki, mi történt! ");
 		FirstSection.add("Basszus! Képzeld el, hogy ");
 		FirstSection.add("Van egy kis probléma ");
-		FirstSection.add("Én csak tettem a dolgom, mint mindíg, erre bumm! ");
+		FirstSection.add("Én csak tettem a dolgom, mint mindíg, erre bumm ");
 		FirstSection.add("A legdurvább dolog esett meg, ami létezhet: ");
 		FirstSection.add("Álmomban sem gondoltam volna, hogy ezt mondom, de ");
 		FirstSection.add("Bocsi, de egy kicsit késni fogok, mert ");

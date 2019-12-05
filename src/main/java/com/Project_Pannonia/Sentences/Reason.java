@@ -1,12 +1,16 @@
 package com.Project_Pannonia.Sentences;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 public class Reason implements ListGenerator {
 	private int listSize = generateList().size();
 	
 	public String getRandomSentence() {
-		String result ="";
+		String result;
+		ArrayList<String> introduction = getList();
+		int randomNumber = getNumber();
+		result = introduction.get(randomNumber);
 		
 		return result;
 	}
@@ -25,11 +29,11 @@ public class Reason implements ListGenerator {
 			ThirdSection.add("olcsó parfümöket akart rámsózni.");
 			ThirdSection.add("meg akart erőszakolni.");
 			ThirdSection.add("feljelentett gyorshajtásért.");
-			ThirdSection.add("ellopta a biciklimet");
-			ThirdSection.add("áthajtott rajtem egy kotrógéppel.");
+			ThirdSection.add("ellopta a biciklimet.");
+			ThirdSection.add("áthajtott rajtam egy kotrógéppel.");
 			ThirdSection.add("teleposztolta pornóvideókkal a Facebook-oldalam.");
 			ThirdSection.add("megpróbált megölni.");
-			ThirdSection.add("el akart csábítani");
+			ThirdSection.add("el akart csábítani.");
 			ThirdSection.add("eltépte az adóbevallásomat.");
 			ThirdSection.add("gyomorszájon vágott.");
 			ThirdSection.add("összeveszett a buszsofőrrel.");
@@ -45,6 +49,11 @@ public class Reason implements ListGenerator {
 		return ThirdSection;
 	}
 
-	
+	public int getNumber() {
+		Random random = new Random();
+		int element = random.nextInt(listSize-1);
+		
+		return element;
+	}
 
 }
